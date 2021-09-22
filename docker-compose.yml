@@ -1,0 +1,8 @@
+services:
+  details:
+    build: .
+    image: ghcr.io/kittipot321/bookinfo-details:dev
+    ports:
+      - "8081:9080"
+    environment:
+      ENABLE_EXTERNAL_BOOK_SERVICE: "true"
